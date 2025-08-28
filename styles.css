@@ -68,7 +68,7 @@ body{
 }
 
 /* Cards, buttons */
-.card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:clamp(16px,2vw,24px);box-shadow:var(--shadow)}
+.card{display:block;background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:clamp(16px,2vw,24px);box-shadow:var(--shadow);text-decoration:none;color:inherit}
 .btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;border:0;border-radius:.8rem;padding:.7rem 1rem;font-weight:600}
 .btn:hover{opacity:.92}
 .btn-accent{background:var(--coral)}
