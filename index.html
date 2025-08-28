@@ -1,7 +1,203 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Site</title>
-<h1>Hello from GitHub Pages</h1>
-<p>If you can read this, deploy worked.</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rachael Tutwiler Fortune — Bridge‑builder. Educator. Author. Speaker.</title>
+  <meta name="description" content="Rachael Tutwiler Fortune inspires leaders across sectors to heal what’s broken, think with clarity, and lead with courage and care." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Rachael Tutwiler Fortune home">
+        <img src="assets/logo.svg" alt="" width="28" height="28" aria-hidden="true">
+        <span>Rachael Tutwiler Fortune</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">☰</button>
+      <nav id="nav-list" class="nav-list" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#book">Book</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="btn btn-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-copy">
+          <h1>Bridge‑builder. Educator. Author. Speaker.</h1>
+          <p class="subhead">Rachael Tutwiler Fortune inspires leaders across sectors to heal what’s broken, think with clarity, and lead with courage and care.</p>
+          <div class="actions">
+            <a href="#book" class="btn">Explore the Book</a>
+            <a href="#contact" class="btn btn-accent">Invite Rachael to Speak</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/portrait.svg" alt="Portrait of Rachael Tutwiler Fortune" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>About</h2>
+          <p class="kicker">Meet Rachael — a nationally recognized leader dedicated to creating opportunity for every child and equipping leaders in every sector to build bridges in times of change.</p>
+        </header>
+
+        <article class="bio card">
+          <p><strong>Rachael Tutwiler Fortune</strong> is a nationally recognized leader and bridge‑builder who equips people and organizations to lead with courage, clarity, and care. She is best known for mobilizing partners to create opportunity for every child, while offering lessons that resonate with leaders across business, nonprofit, education, and civic life.</p>
+          <p>As President of the Jacksonville Public Education Fund, Rachael has brought together educators, families, business leaders, and philanthropists to drive meaningful results for students and the broader community. She is also an Adjunct Instructor of Leadership at the University of North Florida and a proud graduate of both Stanford University and UNF.</p>
+          <p>An award‑winning leader, Rachael has served in national and local leadership roles and lends her expertise across boards in health, education, and civic engagement. Her work centers on practical, people‑first leadership that bridges divides and inspires lasting impact. She champions <em>Heal. Think. Lead.</em> — a simple, powerful framework that helps leaders restore trust, focus on what matters, and act with integrity.</p>
+          <p>Whether in a classroom, boardroom, or community forum, Rachael helps people see challenges as opportunities to build bridges — so every generation can thrive.</p>
+          <ul class="highlights">
+            <li>Educator & Non‑Profit Executive</li>
+            <li>Advocate for opportunity for every child</li>
+            <li>Collaborative, data‑informed leader</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Book -->
+    <section id="book" class="section alt">
+      <div class="container grid-2">
+        <div class="book-media">
+          <img src="assets/book-cover.svg" alt="Book cover: Bridge Builder" />
+        </div>
+        <div class="book-copy">
+          <h2><span class="soft">Book</span><br>Bridge Builder: Leading with Purpose and Courage to Create Opportunity for All</h2>
+          <p class="tagline">A leadership memoir and playbook for anyone tasked with building bridges in a divided world.</p>
+          <p>Part story, part playbook, <em>Bridge Builder</em> equips leaders at every level to transform how they show up — for themselves, their teams, and their communities. Rooted in her journey through education and civic leadership, Rachael shares her <em>Heal. Think. Lead.</em> framework, offering practical strategies, reflective prompts, and real‑world lessons that apply across sectors.</p>
+          <div class="actions">
+            <a href="#contact" class="btn">Preorder Interest</a>
+            <a href="assets/sample.pdf" class="btn btn-outline">Read a Sample</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaking -->
+    <section id="speaking" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Speaking</h2>
+          <p class="kicker">From boardrooms to classrooms, Rachael delivers keynotes, panels, and workshops that inspire and equip audiences to lead with courage and clarity.</p>
+        </header>
+        <div class="topics grid-3">
+          <div class="card">
+            <h3>Heal. Think. Lead.</h3>
+            <p>Practical strategies for restoring trust, focusing on what matters, and catalyzing results.</p>
+          </div>
+          <div class="card">
+            <h3>Bridging Divides</h3>
+            <p>How to align perspectives, convene allies, and drive impact across communities and organizations.</p>
+          </div>
+          <div class="card">
+            <h3>A Vision for Students’ Future</h3>
+            <p>Inspiring communities to imagine what’s possible for the next generation and what it will take across sectors to prepare them.</p>
+          </div>
+        </div>
+
+        <form id="request-form" class="form card" aria-labelledby="request-heading">
+          <h3 id="request-heading">Request Rachael for Your Event</h3>
+          <div class="form-grid">
+            <label>Full Name
+              <input name="name" type="text" required autocomplete="name" />
+            </label>
+            <label>Organization
+              <input name="org" type="text" autocomplete="organization" />
+            </label>
+            <label>Email
+              <input name="email" type="email" required autocomplete="email" />
+            </label>
+            <label>Event Date
+              <input name="date" type="date" />
+            </label>
+            <label class="full">Details
+              <textarea name="details" rows="5" placeholder="Tell us about your audience, goals, and preferred topics."></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-accent">Send Request</button>
+          <p class="form-note">This static form will open your email client with a pre‑filled message to <a href="mailto:info@rachaeltfortune.com">info@rachaeltfortune.com</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Praise for Rachael</h2>
+        </header>
+        <div class="testimonials grid-3">
+          <blockquote class="card">
+            <p>“Insert quote from event organizer here.”</p>
+            <cite>— Event Organizer</cite>
+          </blockquote>
+          <blockquote class="card">
+            <p>“Insert quote from business or civic leader here.”</p>
+            <cite>— Business/Civic Leader</cite>
+          </blockquote>
+          <blockquote class="card">
+            <p>“Insert quote from educator or student here.”</p>
+            <cite>— Educator or Student</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div class="contact-copy">
+          <h2>Contact</h2>
+          <p>For inquiries about Rachael’s book, speaking engagements, or media, please reach out.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:info@rachaeltfortune.com">info@rachaeltfortune.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="#" aria-label="LinkedIn profile link">View Profile</a></li>
+          </ul>
+          <p>Rachael looks forward to connecting with you.</p>
+        </div>
+        <div class="contact-card card">
+          <h3>Quick Message</h3>
+          <form id="contact-form" class="form">
+            <label>Your Email
+              <input type="email" name="from" required placeholder="you@example.com" autocomplete="email">
+            </label>
+            <label>Message
+              <textarea name="message" rows="6" required placeholder="How can Rachael help?"></textarea>
+            </label>
+            <button type="submit" class="btn">Email Us</button>
+          </form>
+          <p class="form-note">This will open your email client. For booking requests, use the form above.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <nav aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#book">Book</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Rachael Tutwiler Fortune. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
