@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — A Bridge Within | Rachael Tutwiler Fortune</title>
+  <meta name="description" content="Let's connect. Reach out about speaking opportunities, media interviews, podcast appearances, or book-related inquiries — or simply to stay connected." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce">Coming September 2026 • Join the Bridge Within Community</div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="A Bridge Within — home">
+        <span class="brand-name">A Bridge Within</span>
+        <span class="brand-tag">Building Connection. Creating Opportunity.</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a class="navlink" href="book.html">The Book</a>
+        <a class="navlink" href="speaking.html">Speaking</a>
+        <a class="navlink" href="meet-rachael.html">Meet Rachael</a>
+        <a class="navlink" href="endorsements.html">Endorsements</a>
+        <a class="navlink active" href="contact.html">Contact</a>
+        <a class="btn btn-gold nav-cta" href="community.html">Join the Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="section bg-ivory">
+      <div class="container center" style="max-width:760px">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 class="h-display reveal">Let's Connect.</h1>
+        <hr class="divider center reveal" />
+        <p class="lead reveal">Whether you're interested in speaking opportunities, media interviews, podcast appearances, book-related inquiries, or simply want to stay connected, I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="section bg-white" style="padding-top:0">
+      <div class="container grid cols-2" style="align-items:start">
+        <!-- LEFT: form -->
+        <div class="reveal">
+          <h2 class="h-section" style="font-size:clamp(1.5rem,3vw,2rem)">Get In Touch</h2>
+          <hr class="divider" />
+          <form data-demo style="margin-top:1rem">
+            <div class="field"><label>Name *</label><input type="text" name="name" required></div>
+            <div class="field"><label>Email *</label><input type="email" name="email" required></div>
+            <div class="field"><label>Organization (optional)</label><input type="text" name="organization"></div>
+            <div class="field"><label>Reason for Inquiry *</label>
+              <select name="reason" required>
+                <option value="" disabled selected>Select an option</option>
+                <option>Speaking Opportunity</option>
+                <option>Media / Podcast</option>
+                <option>Book Inquiry</option>
+                <option>General Question</option>
+              </select>
+            </div>
+            <div class="field"><label>Message *</label><textarea name="message" required></textarea></div>
+            <button class="btn btn-gold" type="submit">Send Message</button>
+            <p class="form-msg" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
+          </form>
+        </div>
+
+        <!-- RIGHT: community card -->
+        <div class="reveal">
+          <div class="signup-card">
+            <h3>Join The Bridge Within Community</h3>
+            <p style="color:rgba(255,255,255,.85)">Be the first to know about book launch updates, speaking announcements, exclusive content, and community events.</p>
+            <ul class="benefits" style="margin:1.2rem 0">
+              <li>Book launch updates</li>
+              <li>Speaking announcements</li>
+              <li>Exclusive reflections</li>
+              <li>Event invitations</li>
+              <li>Community updates</li>
+            </ul>
+            <form data-demo class="signup" style="max-width:none">
+              <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+              <button class="btn btn-gold" type="submit">Join the Community</button>
+              <p class="form-msg" style="display:none;color:var(--gold-soft);font-weight:600"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER minimal (3-col) -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div class="fb-left">
+        <div class="name">A Bridge Within</div>
+        <div class="tag">Building Connection. Creating Opportunity.</div>
+      </div>
+      <div class="fb-center">© 2026 Rachael Tutwiler Fortune. All Rights Reserved.</div>
+      <div class="fb-right">
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14H.2V8zm7.5 0h4.4v1.9h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V22h-4.6v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V22H7.7V8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
