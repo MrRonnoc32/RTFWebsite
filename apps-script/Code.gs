@@ -15,7 +15,7 @@
  */
 
 // ▼▼▼ SET THIS ▼▼▼
-var OWNER_EMAIL = "REPLACE_WITH_OWNER_EMAIL"; // e.g. "rachael@example.com"
+var OWNER_EMAIL = "rachael.tutwiler@gmail.com"; // where inquiries are sent
 // ▲▲▲ SET THIS ▲▲▲
 
 var SITE_NAME = "A Bridge Within";
