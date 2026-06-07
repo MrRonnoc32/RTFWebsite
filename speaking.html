@@ -3,111 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Speaking — Rachael Tutwiler Fortune</title>
-  <meta name="description" content="Explore speaking topics, request Rachael for your event, and read testimonials." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Speaking — A Bridge Within | Rachael Tutwiler Fortune</title>
+  <meta name="description" content="Bring bridge-building leadership to your audience. Rachael Tutwiler Fortune helps leaders build connection, navigate difference, and create opportunity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html#home" aria-label="Rachael Tutwiler Fortune home">
-        <img src="assets/logo.svg" alt="" width="28" height="28" aria-hidden="true">
-        <span>Rachael Tutwiler Fortune</span>
+  <div class="announce">Coming September 2026 • Join the Bridge Within Community</div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="A Bridge Within — home">
+        <span class="brand-name">A Bridge Within</span>
+        <span class="brand-tag">Building Connection. Creating Opportunity.</span>
       </a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">☰</button>
-      <nav id="nav-list" class="nav-list" aria-label="Main">
-        <a href="about.html">About</a>
-        <a href="book.html">Book</a>
-        <a href="speaking.html" aria-current="page">Speaking</a>
-        <a href="index.html#contact" class="btn btn-accent">Contact</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a class="navlink" href="book.html">The Book</a>
+        <a class="navlink active" href="speaking.html">Speaking</a>
+        <a class="navlink" href="meet-rachael.html">Meet Rachael</a>
+        <a class="navlink" href="endorsements.html">Endorsements</a>
+        <a class="navlink" href="contact.html">Contact</a>
+        <a class="btn btn-gold nav-cta" href="community.html">Join the Community</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Speaking -->
-    <section id="speaking" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Speaking</h2>
-          <p class="kicker">From boardrooms to classrooms, Rachael delivers keynotes, panels, and workshops that inspire and equip audiences to lead with courage and clarity.</p>
-        </header>
-        <div class="topics grid-3">
-          <div class="card">
-            <h3>Heal. Think. Lead.</h3>
-            <p>Practical strategies for restoring trust, focusing on what matters, and catalyzing results.</p>
-          </div>
-          <div class="card">
-            <h3>Bridging Divides</h3>
-            <p>How to align perspectives, convene allies, and drive impact across communities and organizations.</p>
-          </div>
-          <div class="card">
-            <h3>A Vision for Students’ Future</h3>
-            <p>Inspiring communities to imagine what’s possible for the next generation and what it will take across sectors to prepare them.</p>
+    <!-- HERO -->
+    <section class="hero bg-ivory">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <img class="portrait portrait-tall" src="assets/img/rachael-portrait.jpg" alt="Rachael Tutwiler Fortune, keynote speaker" />
+        </div>
+        <div class="reveal">
+          <h1 class="h-section">Bring Bridge-Building Leadership to Your Audience</h1>
+          <hr class="divider" />
+          <p class="subhead" style="color:var(--teal)">Helping leaders build connection, navigate difference, and create opportunity.</p>
+          <p>Rachael Tutwiler Fortune is an author, speaker, educator, and nationally recognized civic leader whose work helps organizations move from fragmentation to connection — and from connection to opportunity.</p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:1.2rem">
+            <a class="btn btn-gold" href="#inquiry">Book Rachael</a>
+            <a class="btn btn-outline" href="#" onclick="return false">Download Speaker One-Sheet</a>
           </div>
         </div>
-
-        <form id="request-form" class="form card" aria-labelledby="request-heading">
-          <h3 id="request-heading">Request Rachael for Your Event</h3>
-          <div class="form-grid">
-            <label>Full Name
-              <input name="name" type="text" required autocomplete="name" />
-            </label>
-            <label>Organization
-              <input name="org" type="text" autocomplete="organization" />
-            </label>
-            <label>Email
-              <input name="email" type="email" required autocomplete="email" />
-            </label>
-            <label>Event Date
-              <input name="date" type="date" />
-            </label>
-            <label class="full">Details
-              <textarea name="details" rows="5" placeholder="Tell us about your audience, goals, and preferred topics."></textarea>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-accent">Send Request</button>
-          <p class="form-note">This static form will open your email client with a pre‑filled message to <a href="mailto:info@rachaeltfortune.com">info@rachaeltfortune.com</a>.</p>
-        </form>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section alt">
+    <!-- WHY AUDIENCES CONNECT (teal band) -->
+    <section class="section bg-teal">
       <div class="container">
-        <header class="section-header">
-          <h2>Praise for Rachael</h2>
-        </header>
-        <div class="testimonials grid-3">
-          <blockquote class="card">
-            <p>“Insert quote from event organizer here.”</p>
-            <cite>— Event Organizer</cite>
-          </blockquote>
-          <blockquote class="card">
-            <p>“Insert quote from business or civic leader here.”</p>
-            <cite>— Business/Civic Leader</cite>
-          </blockquote>
-          <blockquote class="card">
-            <p>“Insert quote from educator or student here.”</p>
-            <cite>— Educator or Student</cite>
-          </blockquote>
+        <h2 class="h-section upper center reveal" style="color:var(--gold-soft)">Why Audiences Connect with Rachael</h2>
+        <hr class="divider center reveal" />
+        <div class="grid cols-3" style="margin-top:clamp(28px,4vw,48px)">
+          <div class="pillar reveal"><h3 style="color:#fff">Authentic</h3><p style="color:rgba(255,255,255,.82)">Rachael shares real stories and practical insights drawn from leadership in classrooms, communities, boardrooms, and organizations.</p></div>
+          <div class="pillar reveal"><h3 style="color:#fff">Actionable</h3><p style="color:rgba(255,255,255,.82)">Audiences leave with tools and strategies they can immediately apply.</p></div>
+          <div class="pillar reveal"><h3 style="color:#fff">Inspiring</h3><p style="color:rgba(255,255,255,.82)">Rachael challenges audiences to lead with courage, clarity, and connection.</p></div>
         </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE PRESENTATIONS -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="h-section center reveal">Signature Presentations</h2>
+        <hr class="divider center reveal" />
+        <div class="grid cols-3" style="margin-top:clamp(28px,4vw,48px)">
+          <div class="quote-card reveal" style="border-color:var(--line)"><h3 style="font-family:var(--serif);color:var(--teal);font-size:1.3rem;margin-bottom:.6rem">Building Connection. Creating Opportunity.</h3><p style="color:var(--muted);margin:0">How leaders create trust, strengthen relationships, and expand opportunity for others.</p></div>
+          <div class="quote-card reveal" style="border-color:var(--line)"><h3 style="font-family:var(--serif);color:var(--teal);font-size:1.3rem;margin-bottom:.6rem">Leading Through Change</h3><p style="color:var(--muted);margin:0">How leaders can navigate uncertainty while remaining grounded in purpose, values, and relationships.</p></div>
+          <div class="quote-card reveal" style="border-color:var(--line)"><h3 style="font-family:var(--serif);color:var(--teal);font-size:1.3rem;margin-bottom:.6rem">The Future Belongs to the Connected</h3><p style="color:var(--muted);margin:0">Leadership lessons for innovation and creating opportunity in a rapidly changing world.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCES -->
+    <section class="section bg-ivory">
+      <div class="container center">
+        <h2 class="h-section reveal">Audiences</h2>
+        <hr class="divider center reveal" />
+        <div class="audience-grid reveal" style="margin-top:2rem">
+          <span class="chip">Conference Associations</span>
+          <span class="chip">Foundations &amp; Nonprofits</span>
+          <span class="chip">Corporate Teams</span>
+          <span class="chip">Education Organizations</span>
+          <span class="chip">Faith Communities</span>
+          <span class="chip">Community &amp; Civic Organizations</span>
+          <span class="chip">Boards &amp; Executive Teams</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALLOUT -->
+    <section class="section bg-white" style="padding-block:clamp(20px,4vw,48px)">
+      <div class="container">
+        <div class="callout reveal">
+          <span class="callout-ic" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="20"/><path d="M24 22v12M24 14h.02"/></svg></span>
+          <p>When you click <strong>"Book Rachael,"</strong> you'll be taken to a page with more about Rachael, including her full bio, signature topics, speaking highlights, and past engagement examples to help you determine the right fit for your event or organization.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
+    <section class="section bg-ivory" id="inquiry">
+      <div class="container" style="max-width:780px">
+        <div class="center reveal">
+          <h2 class="h-section">Book Rachael for Your Next Event</h2>
+          <hr class="divider center" />
+          <p class="lead">Let's start a conversation about how Rachael can bring value to your audience.</p>
+        </div>
+        <form class="reveal" data-demo style="margin-top:2rem">
+          <div class="form-row">
+            <div class="field"><label>Name</label><input type="text" name="name" required></div>
+            <div class="field"><label>Organization</label><input type="text" name="organization"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Email</label><input type="email" name="email" required></div>
+            <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Event Date</label><input type="date" name="event_date"></div>
+            <div class="field"><label>Event Location</label><input type="text" name="event_location"></div>
+          </div>
+          <div class="field"><label>Audience Size</label><input type="text" name="audience_size"></div>
+          <div class="field"><label>Message</label><textarea name="message"></textarea></div>
+          <button class="btn btn-gold" type="submit">Submit Inquiry</button>
+          <p class="form-msg" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
+        </form>
       </div>
     </section>
   </main>
 
+  <!-- FEATURE FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <nav aria-label="Footer">
-        <a href="index.html#home">Home</a>
-        <a href="about.html">About</a>
-        <a href="book.html">Book</a>
-        <a href="speaking.html" aria-current="page">Speaking</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <p class="copyright">© <span id="year"></span> Rachael Tutwiler Fortune. All rights reserved.</p>
+    <div class="container footer-feature">
+      <h2>Let's Create Opportunity Together.</h2>
+      <hr class="divider center" />
+    </div>
+    <div class="container footer-bottom">
+      <div class="fb-left">
+        <div class="name">A Bridge Within</div>
+        <div class="tag">Building Connection. Creating Opportunity.</div>
+      </div>
+      <div class="fb-center">© 2026 Rachael Tutwiler Fortune. All Rights Reserved.</div>
+      <div class="fb-right">
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14H.2V8zm7.5 0h4.4v1.9h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V22h-4.6v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V22H7.7V8z"/></svg>
+        </a>
+      </div>
     </div>
   </footer>
 

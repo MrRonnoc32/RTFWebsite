@@ -3,87 +3,124 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rachael Tutwiler Fortune — Bridge‑builder. Educator. Author. Speaker.</title>
-  <meta name="description" content="Rachael Tutwiler Fortune inspires leaders across sectors to heal what’s broken, think with clarity, and lead with courage and care." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>A Bridge Within — Rachael Tutwiler Fortune</title>
+  <meta name="description" content="A Bridge Within by Rachael Tutwiler Fortune — a leadership story and guide on building connection, navigating difference, and creating opportunity. Coming September 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Rachael Tutwiler Fortune home">
-        <img src="assets/logo.svg" alt="" width="28" height="28" aria-hidden="true">
-        <span>Rachael Tutwiler Fortune</span>
+
+  <!-- Announcement -->
+  <div class="announce">Coming September 2026 • Join the Bridge Within Community</div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="A Bridge Within — home">
+        <span class="brand-name">A Bridge Within</span>
+        <span class="brand-tag">Building Connection. Creating Opportunity.</span>
       </a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">☰</button>
-      <nav id="nav-list" class="nav-list" aria-label="Main">
-        <a href="about.html">About</a>
-        <a href="book.html">Book</a>
-        <a href="speaking.html">Speaking</a>
-        <a href="#contact" class="btn btn-accent">Contact</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a class="navlink" href="book.html">The Book</a>
+        <a class="navlink" href="speaking.html">Speaking</a>
+        <a class="navlink" href="meet-rachael.html">Meet Rachael</a>
+        <a class="navlink" href="endorsements.html">Endorsements</a>
+        <a class="navlink" href="contact.html">Contact</a>
+        <a class="btn btn-gold nav-cta" href="community.html">Join the Community</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section id="home" class="section hero">
-      <div class="container grid-2">
-        <div class="hero-copy">
-          <h1>Bridge‑builder. Educator. Author. Speaker.</h1>
-          <p class="subhead">Rachael Tutwiler Fortune inspires leaders across sectors to heal what’s broken, think with clarity, and lead with courage and care.</p>
-          <div class="actions">
-            <a href="book.html" class="btn">Explore the Book</a>
-            <a href="about.html" class="btn btn-outline">About Rachael</a>
-            <a href="#contact" class="btn btn-accent">Invite Rachael to Speak</a>
-          </div>
+    <!-- HERO -->
+    <section class="hero hero-teal">
+      <div class="container hero-grid">
+        <div class="book-stage reveal">
+          <img class="book-3d" src="assets/img/book-3d.jpg" alt="A Bridge Within — 3D book cover by Rachael Tutwiler Fortune" />
         </div>
-        <div class="hero-media">
-          <img src="RTF.jpg" alt="Portrait of Rachael Tutwiler Fortune" />
+        <div class="reveal">
+          <h1 class="h-display">A Bridge Within</h1>
+          <p class="subhead">Building Connection. Creating Opportunity.</p>
+          <p>Leadership is not about position. It is about building trust, navigating difference, and creating opportunity. For others. For our communities. For the future.</p>
+          <form class="signup" data-demo>
+            <div class="row">
+              <input class="input" type="text" name="first_name" placeholder="First Name" aria-label="First name" required />
+              <input class="input" type="email" name="email" placeholder="Email Address" aria-label="Email address" required />
+            </div>
+            <button class="btn btn-gold" type="submit">Join the Bridge Within Community</button>
+            <p class="note" style="color:rgba(255,255,255,.75)">Be the first to receive updates, early access, and exclusive content.</p>
+            <p class="form-msg" style="display:none;color:var(--gold-soft);font-weight:600"></p>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container grid-2">
-        <div class="contact-copy">
-          <h2>Contact</h2>
-          <p>For inquiries about Rachael’s book, speaking engagements, or media, please reach out.</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:info@rachaeltfortune.com">info@rachaeltfortune.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="#" aria-label="LinkedIn profile link">View Profile</a></li>
-          </ul>
-          <p>Rachael looks forward to connecting with you.</p>
+    <!-- WHY THIS BOOK, WHY NOW -->
+    <section class="section bg-ivory">
+      <div class="container center">
+        <p class="eyebrow reveal">A Bridge Within</p>
+        <h2 class="h-section upper reveal">Why This Book, Why Now</h2>
+        <hr class="divider center reveal" />
+        <p class="lead reveal" style="max-width:760px;margin-inline:auto">In a time of division, distrust, and rapid change, we need leaders who can build connection and create opportunity for all.</p>
+
+        <div class="grid cols-3" style="margin-top:clamp(36px,5vw,64px);text-align:left">
+          <div class="pillar reveal">
+            <span class="ic" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"><circle cx="14" cy="16" r="6"/><circle cx="34" cy="16" r="6"/><path d="M6 40c0-6 4-10 8-10s8 4 8 10M26 40c0-6 4-10 8-10s8 4 8 10"/></svg>
+            </span>
+            <h3>Build Connection</h3>
+            <p>Across differences. Across divides. Across systems.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="ic" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"><path d="M24 6v36M10 20l14-14 14 14"/><circle cx="24" cy="38" r="4"/></svg>
+            </span>
+            <h3>Create Opportunity</h3>
+            <p>Expand access. Unlock potential. Shape a better future.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="ic" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 4"/></svg>
+            </span>
+            <h3>Lead with Purpose</h3>
+            <p>From the inside out. With courage. Together.</p>
+          </div>
         </div>
-        <div class="contact-card card">
-          <h3>Quick Message</h3>
-          <form id="contact-form" class="form">
-            <label>Your Email
-              <input type="email" name="from" required placeholder="you@example.com" autocomplete="email">
-            </label>
-            <label>Message
-              <textarea name="message" rows="6" required placeholder="How can Rachael help?"></textarea>
-            </label>
-            <button type="submit" class="btn">Email Us</button>
-          </form>
-          <p class="form-note">This will open your email client. For booking requests, use the form above.</p>
+
+        <div class="reveal" style="margin-top:clamp(36px,5vw,56px)">
+          <a class="btn btn-outline" href="book.html">Learn More About the Book</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET RACHAEL TEASER -->
+    <section class="section bg-white">
+      <div class="container hero-grid" style="padding-block:0">
+        <div class="reveal">
+          <img class="portrait" src="assets/img/rachael-portrait.jpg" alt="Rachael Tutwiler Fortune, author and speaker" />
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Author. Speaker. Bridge-Builder.</p>
+          <p style="font-family:var(--serif);font-size:1.3rem;color:var(--teal)">Rachael Tutwiler Fortune has spent her career bringing together people, organizations, and communities to create opportunities that might otherwise never exist.</p>
+          <p>From teen mother to teacher, nonprofit executive, civic leader, and author, her journey demonstrates that meaningful leadership rarely begins with authority. It begins with trust.</p>
+          <hr class="divider" />
+          <a class="btn btn-ink" href="meet-rachael.html">Read Rachael's Story</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER (minimal) -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <nav aria-label="Footer">
-        <a href="#home">Home</a>
-        <a href="about.html">About</a>
-        <a href="book.html">Book</a>
-        <a href="speaking.html">Speaking</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p class="copyright">© <span id="year"></span> Rachael Tutwiler Fortune. All rights reserved.</p>
+    <div class="container footer-minimal">
+      <span>© 2026 Rachael Tutwiler Fortune. All Rights Reserved.</span>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14H.2V8zm7.5 0h4.4v1.9h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V22h-4.6v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V22H7.7V8z"/></svg>
+      </a>
     </div>
   </footer>
 
