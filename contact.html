@@ -50,7 +50,7 @@
         <div class="reveal">
           <h2 class="h-section" style="font-size:clamp(1.5rem,3vw,2rem)">Get In Touch</h2>
           <hr class="divider" />
-          <form data-demo style="margin-top:1rem">
+          <form data-form="contact" style="margin-top:1rem">
             <div class="field"><label>Name *</label><input type="text" name="name" required></div>
             <div class="field"><label>Email *</label><input type="email" name="email" required></div>
             <div class="field"><label>Organization (optional)</label><input type="text" name="organization"></div>
@@ -64,6 +64,7 @@
               </select>
             </div>
             <div class="field"><label>Message *</label><textarea name="message" required></textarea></div>
+            <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <button class="btn btn-gold" type="submit">Send Message</button>
             <p class="form-msg" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
           </form>
@@ -81,8 +82,9 @@
               <li>Event invitations</li>
               <li>Community updates</li>
             </ul>
-            <form data-demo class="signup" style="max-width:none">
+            <form data-form="newsletter" class="signup" style="max-width:none">
               <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+              <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
               <button class="btn btn-gold" type="submit">Join the Community</button>
               <p class="form-msg" style="display:none;color:var(--gold-soft);font-weight:600"></p>
             </form>

@@ -157,6 +157,9 @@ p { margin: 0 0 1rem; }
 textarea { resize: vertical; min-height: 120px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
+/* Honeypot (spam trap) — visually hidden, off-screen */
+.hp { position: absolute !important; left: -9999px !important; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+
 /* Inline newsletter form (light backgrounds) */
 .signup { display: grid; gap: .8rem; max-width: 440px; }
 .signup .row { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
