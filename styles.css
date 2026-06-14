@@ -121,6 +121,7 @@ p { margin: 0 0 1rem; }
 .brand .brand-tag {
   font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.1em;
   color: var(--gold-soft); text-transform: uppercase; margin-top: 3px;
+  white-space: nowrap;
 }
 .nav-links { display: flex; align-items: center; gap: 26px; }
 .nav-links a.navlink {
@@ -336,6 +337,7 @@ textarea { resize: vertical; min-height: 120px; }
 .endorse blockquote { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.4rem); font-style: italic; color: var(--ink); margin: 0 0 1rem; }
 .endorse .by { font-weight: 700; color: var(--teal); }
 .endorse .by span { display: block; font-weight: 400; font-size: 0.9rem; color: var(--muted); }
+.endorse .by span.by-name2 { font-weight: 700; font-size: 1rem; color: var(--teal); margin-top: .5rem; }
 
 /* Personal reflection / signature card */
 .reflection { max-width: 760px; margin-inline: auto; text-align: center; }
