@@ -8,7 +8,7 @@
   // (see apps-script/SETUP.md). Until it is set, forms show a thank-you
   // message without sending anything ("demo mode").
   // =====================================================================
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbz7oM5ck4eC1MDGKYHGOiiCvaeqP61nHWDLqAs2rUicp4F4JpEEsqv4QX8faNIL6O7A/exec";
 
   // ----- Mobile navigation toggle -----
   var menuBtn = document.querySelector(".menu-btn");
