@@ -14,9 +14,15 @@
  * ---------------------------------------------------------------------------
  */
 
-// ▼▼▼ SET THIS ▼▼▼
-var OWNER_EMAIL = "rachael.tutwiler@gmail.com"; // where inquiries are sent
-// ▲▲▲ SET THIS ▲▲▲
+// ▼▼▼ SET THESE ▼▼▼
+var OWNER_EMAIL = "rachael.tutwiler@gmail.com"; // default inbox for submissions
+
+// Optional: route specific form types to a different address.
+// (rachael@yourbridgewithin.com must be a working mailbox to receive these.)
+var RECIPIENTS = {
+  speaking: "rachael@yourbridgewithin.com"
+};
+// ▲▲▲ SET THESE ▲▲▲
 
 var SITE_NAME = "A Bridge Within";
 
@@ -79,7 +85,8 @@ function doGet() {
 }
 
 function notifyOwner(formType, params) {
-  if (!OWNER_EMAIL || OWNER_EMAIL.indexOf("@") === -1) return;
+  var to = RECIPIENTS[formType] || OWNER_EMAIL;
+  if (!to || to.indexOf("@") === -1) return;
 
   var lines = Object.keys(params).map(function (k) {
     return prettyLabel(k) + ": " + params[k];
@@ -94,7 +101,7 @@ function notifyOwner(formType, params) {
   if (params.email && String(params.email).indexOf("@") > -1) {
     options.replyTo = params.email; // reply goes straight to the sender
   }
-  MailApp.sendEmail(OWNER_EMAIL, subject, body, options);
+  MailApp.sendEmail(to, subject, body, options);
 }
 
 function prettyLabel(s) {

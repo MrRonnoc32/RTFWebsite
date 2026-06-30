@@ -45,7 +45,7 @@
           <p class="subhead" style="color:var(--teal)">Helping leaders build connection, navigate difference, and create opportunity.</p>
           <p>Rachael Tutwiler Fortune is an author, speaker, educator, and nationally recognized civic leader whose work helps organizations move from fragmentation to connection — and from connection to opportunity.</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:1.2rem">
-            <a class="btn btn-gold" href="#inquiry">Book Rachael</a>
+            <button class="btn btn-gold" type="button" data-open-modal="book-modal">Book Rachael</button>
             <a class="btn btn-outline" href="#" onclick="return false">Download Speaker One-Sheet</a>
           </div>
         </div>
@@ -95,36 +95,39 @@
       </div>
     </section>
 
-    <!-- INQUIRY FORM -->
-    <section class="section bg-ivory" id="inquiry">
-      <div class="container" style="max-width:780px">
-        <div class="center reveal">
-          <h2 class="h-section">Book Rachael for Your Next Event</h2>
-          <hr class="divider center" />
-          <p class="lead">Let's start a conversation about how Rachael can bring value to your audience.</p>
-        </div>
-        <form class="reveal" data-form="speaking" style="margin-top:2rem">
-          <div class="form-row">
-            <div class="field"><label>Name</label><input type="text" name="name" required></div>
-            <div class="field"><label>Organization</label><input type="text" name="organization"></div>
-          </div>
-          <div class="form-row">
-            <div class="field"><label>Email</label><input type="email" name="email" required></div>
-            <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
-          </div>
-          <div class="form-row">
-            <div class="field"><label>Event Date</label><input type="date" name="event_date"></div>
-            <div class="field"><label>Event Location</label><input type="text" name="event_location"></div>
-          </div>
-          <div class="field"><label>Audience Size</label><input type="text" name="audience_size"></div>
-          <div class="field"><label>Message</label><textarea name="message"></textarea></div>
-          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button class="btn btn-gold" type="submit">Submit Inquiry</button>
-          <p class="form-msg" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
-        </form>
-      </div>
-    </section>
   </main>
+
+  <!-- BOOK RACHAEL MODAL -->
+  <div class="modal-overlay" id="book-modal" role="dialog" aria-modal="true" aria-labelledby="book-modal-title">
+    <div class="modal">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <div class="center">
+        <h2 class="h-section" id="book-modal-title" style="font-size:clamp(1.5rem,3vw,2rem)">Book Rachael for Your Next Event</h2>
+        <hr class="divider center" />
+        <p class="lead">Let's start a conversation about how Rachael can bring value to your audience.</p>
+      </div>
+      <form data-form="speaking" style="margin-top:1.5rem">
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Organization</label><input type="text" name="organization"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Event Date</label><input type="date" name="event_date"></div>
+          <div class="field"><label>Event Location</label><input type="text" name="event_location"></div>
+        </div>
+        <div class="field"><label>Audience Size</label><input type="text" name="audience_size"></div>
+        <div class="field"><label>Message</label><textarea name="message"></textarea></div>
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-gold" type="submit">Submit Inquiry</button>
+        <p class="note" style="margin-top:.8rem">We respect your privacy and will never share your information.</p>
+        <p class="form-msg" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
+      </form>
+    </div>
+  </div>
 
   <!-- FEATURE FOOTER -->
   <footer class="site-footer">

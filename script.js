@@ -42,6 +42,48 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
+  // ----- Modal dialogs -----
+  var openModal = function (modal) {
+    if (!modal) return;
+    modal.classList.add("open");
+    document.body.classList.add("modal-open");
+    var focusable = modal.querySelector("input, textarea, select, button");
+    if (focusable) { setTimeout(function () { focusable.focus(); }, 50); }
+  };
+  var closeModal = function (modal) {
+    if (!modal) return;
+    modal.classList.remove("open");
+    document.body.classList.remove("modal-open");
+  };
+
+  document.querySelectorAll("[data-open-modal]").forEach(function (trigger) {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      openModal(document.getElementById(trigger.getAttribute("data-open-modal")));
+    });
+  });
+  document.querySelectorAll(".modal-overlay").forEach(function (overlay) {
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay || e.target.closest("[data-close-modal]")) {
+        closeModal(overlay);
+      }
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      var open = document.querySelector(".modal-overlay.open");
+      if (open) { closeModal(open); }
+    }
+  });
+  // Auto-open the booking modal when arriving via #book or #inquiry
+  var maybeOpenFromHash = function () {
+    if (location.hash === "#book" || location.hash === "#inquiry") {
+      openModal(document.getElementById("book-modal"));
+    }
+  };
+  maybeOpenFromHash();
+  window.addEventListener("hashchange", maybeOpenFromHash);
+
   // ----- Form submission -----
   document.querySelectorAll("form[data-form]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
